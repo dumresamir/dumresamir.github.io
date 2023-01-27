@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<title>Form Validation</title>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="user">Username<br>
+			<input type="password" id="password">Password<br>
+			<input type="submit" onclick="validation()">
+		</form> <!-- Samir is Here and this is comment -->
+		<script type="text/javascript">
+			function validation()
+			{
+				var user=document.getElementById("user").value;
+				var pass=document.getElementById("user").value;
+				if(user=="" || pass=="")
+				{
+					alert("Username or Password is not valid");
+				}
+				else
+				{
+					alert("Username and Password are both valid");
+				}
+			}
+		</script>
+	</body>
+
+</html>
