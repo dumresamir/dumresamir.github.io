@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Dist conv</title>
+</head>
+<body>
+	<input type="number" id="num">Distance<br>
+	<select id="dist">
+		<option value="miles">To Miles</option>
+		<option value="km">To Kilometres</option>
+	</select>
+	<input type="button" value="Convert" onclick="convert()">
+
+	<script>
+		function convert()
+		{
+			let num = document.getElementById("num").value;
+			let unit = document.getElementById("dist").value;
+			if(unit == "miles")
+			{
+				let miles = num/1.6;
+				document.write(num + "km =" + miles + "miles");
+			}
+			else
+			{
+				let km = num*1.6;
+				document.write(num + "miles =" + km + "km");
+			}
+		}
+	</script>
+</body>
+</html>
